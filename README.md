@@ -4,4 +4,4 @@
 Creer une page d'accueil en utilisant le standard BEM et Sass pour reproduire le contenu de la maquette
 Auteur: Arik Malenfant-Lacombe
 
-## Site Github: https://vrekml.github.io/4w4/
+### Site Github: https://vrekml.github.io/4w4/
