@@ -1,5 +1,3 @@
-# Exercice 1
-## Cours 4W4 Conception d'interface et dev web
+# Ya rien sur main
 
-Creer une page d'accueil en utilisant le standard BEM et Sass pour reproduire le contenu de la maquette
-Auteur: Arik Malenfant-Lacombe
+Changes de branche, le contenu de main est inutile pour le cours 4w4
