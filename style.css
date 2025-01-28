@@ -16,6 +16,20 @@ Text Domain: 4w4-arik
 Variables
 /////////////////// */
 /* /////////////////// 
+Base
+/////////////////// */
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.1);
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* /////////////////// 
 Composants
 /////////////////// */
 .carte {
@@ -71,12 +85,7 @@ Composants
     flex-direction: column;
   }
 }
-.menu__li {
-  display: inline-block;
-}
 .menu__a {
-  color: #333;
-  text-decoration: none;
   padding: 2px 5px;
 }
 
@@ -93,13 +102,29 @@ Composants
 .recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.recherche__img {
-  padding: 2px;
-}
-
 /* /////////////////// 
 Layout
 /////////////////// */
+.burger {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.chk__burger {
+  display: none;
+}
+
+.chk__burger:checked ~ .entete__nav {
+  display: flex;
+}
+
 .entete {
   display: flex;
   justify-content: space-between;
@@ -108,12 +133,23 @@ Layout
 .entete__nav {
   display: flex;
   flex-direction: row;
+  position: static;
   align-items: center;
   gap: 20px;
 }
 @media screen and (max-width: 500px) {
   .entete__nav {
+    display: none;
     flex-direction: column;
+    height: 30vh;
+    width: 100vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    gap: 30px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
   }
 }
 
@@ -125,4 +161,9 @@ Layout
 .hero {
   min-height: 100vh;
   background-image: url("images/bgHeader.jpg");
+}
+.hero__titre {
+  padding-top: 10vh;
+  font-size: 3rem;
+  text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
 }/*# sourceMappingURL=style.css.map */

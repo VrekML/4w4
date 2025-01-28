@@ -5,5 +5,11 @@
 
 .hero {
   min-height: 100vh;
-  background-image: url("images/bgHeader.jpg")
+  background-image: url("images/bgHeader.jpg");
+
+  &__titre {
+    padding-top: 10vh;
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
+  }
 }
