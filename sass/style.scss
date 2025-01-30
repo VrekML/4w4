@@ -19,6 +19,12 @@ Variables
 @import "variables/dimensions";
 
 /* /////////////////// 
+Base
+/////////////////// */
+@import "base/lien";
+@import "base/simple";
+
+/* /////////////////// 
 Composants
 /////////////////// */
 @import "composants/carte";
@@ -30,4 +36,4 @@ Layout
 /////////////////// */
 @import "layout/entete";
 @import "layout/principal";
-
+@import "layout/footer";
