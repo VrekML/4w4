@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <title>TP1 Arik M.-L.</title>
+  <?php wp_head(); ?>
 </head>
 <body>
   <header>
     <div class="entete">
       <figure class="entete__logo">
-        <img src="images/logo.png" alt="logo de la compagnie" height="40" width="auto">
+        <img src="/4w4/wp-content/themes/TP1/images/logo.png" alt="logo de la compagnie" height="40" width="auto">
       </figure>
-      <lable for="chk__burger" class="burger">
+      
+      <label for="chk__burger" class="burger">
         <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu" alt="bouton burger" width="32" height="32">
-      </lable>
+      </label>
       <input type="checkbox" id="chk__burger" class="chk__burger"> </input>
       <div class="entete__nav">
         <nav class="entete__menu">
@@ -44,7 +44,7 @@
   <section class="hero">
     <div class="hero__contenu global">
       <h1 class="hero__titre">Voyagez autrement avec IHOP!</h1>
-      <p class="hero__description">Découvrez des destinations uniques et inoubliables avec IHOP. Nous vous offrons des expériences authentiques, des paysages à couper le souffle et des aventures sur mesure. Partez à la découverte du monde avec nous et crées des souvenirs imérissables</p>
+      <p class="hero__description">Découvrez des destinations uniques et inoubliables avec IHOP. Nous vous offrons des expériences authentiques, des paysages à couper le souffle et des aventures sur mesure. Partez à la découverte du monde avec nous et crées des souvenirs imérissables.</p>
       <div class="hero__liens">
         <p class="hero__courriel">info@cmaisonneuve.qc.ca</p>
         <p class="hero__adresse">3800 rue Sherbrooke, Montréal</p>
