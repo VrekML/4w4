@@ -34,7 +34,7 @@
         </nav>
         <div class="entete__recherche">
           <form class="recherche">
-            <input type="text" class="recherche__input" onfocus="this.value=''" onblur="this.value='RECHERCHE'"  value="RECHERCHE">
+            <input type="text" class="recherche__input" onfocus="this.value=''" onblur="this.value='Recherche'"  value="Recherche">
             <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search" alt="" height="20" width="20">
           </form>
         </div>
