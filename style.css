@@ -29,6 +29,10 @@ a:visited {
   color: rgba(0, 0, 0, 0.3);
 }
 
+* {
+  font-family: sans-serif;
+}
+
 /* /////////////////// 
 Composants
 /////////////////// */
@@ -166,4 +170,18 @@ Layout
   padding-top: 10vh;
   font-size: 3rem;
   text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
+}
+.hero__liens p, .hero button {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+.hero__bouton {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.668);
 }/*# sourceMappingURL=style.css.map */
