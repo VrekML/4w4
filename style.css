@@ -19,11 +19,11 @@ Variables
 Base
 /////////////////// */
 a {
-  color: black;
+  color: rgba(0, 0, 0, 0.69);
   text-decoration: none;
 }
 a:hover {
-  color: rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0);
 }
 a:visited {
   color: rgba(0, 0, 0, 0.3);
@@ -42,7 +42,7 @@ Composants
   margin-top: 2vh;
   border: 1px solid #ddd;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 3px;
   background-color: white;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.253);
 }
@@ -66,27 +66,32 @@ Composants
 .carte__input {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid rgb(168, 168, 168);
+  border: 2px solid rgb(0, 255, 242);
+  color: rgb(142, 142, 142);
+}
+.carte__input:hover {
+  border: 2px solid rgb(0, 190, 180);
 }
 .carte__bouton {
   padding: 10px 20px;
   margin-top: 1vh;
   text-align: center;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 255, 242);
   border-radius: 4px;
   cursor: pointer;
 }
 .carte__bouton--actif {
-  background-color: #0056b3;
+  background-color: white;
 }
 .carte__bouton:hover {
-  background-color: #0056b3;
+  background-color: rgb(242, 242, 242);
 }
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -104,15 +109,16 @@ Composants
 .recherche {
   display: flex;
   border: 1px solid rgb(168, 168, 168);
-}
-.recherche__input {
   height: 1.3rem;
   padding: 2px;
-  border: none;
-  outline: none;
 }
-.recherche__input:hover {
-  background-color: rgb(219, 219, 219);
+.recherche__input {
+  outline: none;
+  border: none;
+  color: rgb(142, 142, 142);
+}
+.recherche:hover {
+  border: 1px solid rgb(0, 0, 0);
 }
 
 /* /////////////////// 
@@ -144,12 +150,14 @@ Layout
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding-top: 3vh;
 }
 .entete__logo {
   margin: 0;
 }
 .entete__nav {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   position: static;
   align-items: center;
@@ -208,6 +216,7 @@ Layout
 }
 .hero__bouton:hover {
   background-color: rgba(255, 255, 255, 0.427);
+  cursor: pointer;
 }
 
 .galerie {
