@@ -13,6 +13,10 @@
     text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
   }
 
+  &__contenu {
+      max-width: 80%;
+  }
+
   &__description {
     width: 40vw;
   }
@@ -39,5 +43,30 @@
     &:hover {
       background-color: rgba(255, 255, 255, 0.427);
     }
+  }
+}
+
+.galerie {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+
+  &__contenu {
+
+  }
+
+  &__titre {
+
+  }
+
+  &__images {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1vw;
+    row-gap: 1vh;
+
+    border-radius: 8px;
   }
 }
