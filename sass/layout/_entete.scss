@@ -19,6 +19,7 @@
 
 .entete {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -36,7 +37,6 @@
     @media screen and (max-width:$point__rupture) {
       display: none;
       flex-direction: column;
-      height: 30vh;
       width: 100vw;
       padding-top: 3vh;
       padding-bottom: 3vh;

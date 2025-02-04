@@ -34,7 +34,7 @@
         </nav>
         <div class="entete__recherche">
           <form class="recherche">
-            <input type="text" class="recherche__input" onfocus="this.value=''" onblur="this.value='Recherche'"  value="Recherche">
+            <input type="text" class="recherche__input" onfocus="this.value=''" value="Recherche">
             <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search" alt="" height="20" width="20">
           </form>
         </div>
@@ -60,23 +60,44 @@
     </div> 
   </section>
 
-  <section class="galerie">
-    <figure class="galerie__fig">
-      <img src="" alt="">
-    </figure>
-  </section>
-  
-  <!-- <section class="promotion">
-    <div class="carte carte--grande">
-      <figure class="carte__image">
-        <img src="" alt="">
-      </figure>
-      <div class="carte__contenu">
-        <h2 class="carte__titre">Destination de rêve</h2>
-        <p class="carte__description">Découvrez des endroits magnifiques à travers le monde.</p>
-        <button class="carte__bouton carte__bouton--actif">Réserver</button>
+  <section class="carte">
+    <div class="carte--grande">
+      <div class="entete__recherche">
+        <h4 class="carte__contenu">Nom</h4>
+          <input type="text" class="carte__input" onfocus="this.value=''" value="Nom">
       </div>
-    </div>  
-  </section> -->
+      <div class="entete__recherche">
+        <h4 class="carte__contenu">Prénom</h4>
+          <input type="text" class="carte__input" onfocus="this.value=''" value="Prénom">
+      </div>
+      <div class="entete__recherche">
+        <h4 class="carte__contenu">Courriel</h4>
+          <input type="text" class="carte__input" onfocus="this.value=''" value="Courriel">
+      </div>
+      <div class="entete__recherche">
+        <h4 class="carte__contenu">Téléphone</h4>
+          <input type="text" class="carte__input" onfocus="this.value=''" value="Téléphone">
+      </div>
+      <button class="carte__bouton">S'inscrire</button>
+    </div>
+  </section> 
+
+  <section class="galerie">
+    <div class="galerie__contenu">
+        <h2 class="galerie__titre">Destination de rêve</h2>
+        <div class="galerie__images">
+          <img src="/4w4/wp-content/themes/TP1/images/img1.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img2.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img3.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img4.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img5.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img6.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img7.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img8.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img9.jpg" alt="" width="19%">
+          <img src="/4w4/wp-content/themes/TP1/images/img10.jpg" alt="" width="19%">
+        </div>
+      </div>
+  </section>
 </body>
 </html>
