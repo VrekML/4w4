@@ -49,7 +49,7 @@
         <p class="hero__courriel">info@cmaisonneuve.qc.ca</p>
         <p class="hero__adresse">3800 rue Sherbrooke, Montréal</p>
         <p class="hero__telephone">514-254-7131</p>
-        <button class="hero__bouton">Inscription</button>
+        <button class="hero__bouton">S'inscrire</button>
       </div>
       <div class="hero__icone-app">
         <img src="https://s2.svgbox.net/materialui.svg?ic=facebook" alt="" height="20" width="20">
@@ -84,7 +84,7 @@
 
   <section class="galerie">
     <div class="galerie__contenu">
-        <h2 class="galerie__titre">Destination de rêve</h2>
+        <h2 class="galerie__titre">Destinations de rêve</h2>
         <div class="galerie__images">
           <img src="/4w4/wp-content/themes/TP1/images/img1.jpg" alt="" width="19%">
           <img src="/4w4/wp-content/themes/TP1/images/img2.jpg" alt="" width="19%">

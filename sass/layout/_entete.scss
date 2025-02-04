@@ -23,12 +23,15 @@
   justify-content: space-around;
   align-items: center;
 
+  padding-top: 3vh;
+
   &__logo {
     margin: 0;
   }
 
   &__nav {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     position: static;
     align-items: center;
