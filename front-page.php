@@ -1,5 +1,9 @@
+<?php
+// modele front-page.php, affiche la page accueil
+?>
+
 <?php get_header() ?>
-<h1>front-page.php</h1>
+<h4>front-page.php</h4>
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
@@ -28,25 +32,24 @@
         </figure>
     </section>
  
-    <section class="promotion">
-        <div class="carte carte--grande">
-            <figure class="carte__image">
-                <img src="/4w4/wp-content/themes/TP1/images/img1.jpg" alt="Image de voyage">
-            </figure>
-            <div class="carte__contenu">
-                <h2 class="carte__titre">Destination de rêve</h2>
-                <p class="carte__description">Découvrez des endroits magnifiques à travers le monde.</p>
-                <button class="carte__bouton carte__bouton--actif">Réserver</button>
-            </div>
-        </div>
-    </section>
     <section class="populaire">
-        <div class="global">
+        <div class="boite__flex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <article class="populaire__article">
-                <h2 class="populaire__titre"><?php the_title(); ?></h2>
-                <div class="populaire__contenu"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></div>
+            <?php if (in_category('galerie')) {
+              the_content();
+            } else {?>
+
+            <article class="carte carte--grande">
+              <figure class="carte__image">
+                  <img src="<?php echo get_template_directory_uri() . '/images/img1.jpg' ?>" alt="Image de voyage">
+              </figure>
+              <div class="carte__contenu">
+                <h2 class="carte__titre"><?php the_title(); ?></h2>
+                <p class="carte__description"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></p>
+                <button class="carte__bouton carte__bouton--actif">Lire la suite</button>
+              </div>
             </article>
+            <?php } ?>
             <?php endwhile; endif; ?>
         </div>
     </section>

@@ -20,7 +20,15 @@
             </label>
             <input type="checkbox" id="chk__burger" class="chk__burger">
             <div class="entete__nav">
-                <nav class="entete__menu">
+
+                <?php wp_nav_menu(array (
+                      'menu'                 => 'principal',
+                      'container'            => 'nav',
+                      'container_class'      => 'entete__menu',
+                )); ?> 
+
+                <!-- ancien menu, ne plus utiliser saufe si tout brise -->
+                <!-- <nav class="entete__menu">
                     <ul class="menu">
                         <li class="menu__li">
                             <a class="menu__a" href="#">Aventure</a>
@@ -44,10 +52,10 @@
                             <a  class="menu__a" href="#">Zen</a>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
                 <div class="entete__recherche">
                     <form  class="recherche">
-                        <input type="text" class="recherche__input">
+                        <input type="text" class="recherche__input" onfocus="this.value=''" value="Recherche">
                         <img  class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="20" height="20">
                     </form>
                 </div>

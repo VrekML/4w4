@@ -14,7 +14,7 @@
   }
 
   &__contenu {
-      max-width: 80%;
+    max-width: 80%;
   }
 
   &__description {
@@ -62,4 +62,11 @@
 
     border-radius: 8px;
   }
+}
+
+.boite__flex {
+  display: flex;
+  // flex-wrap: wrap;
+  flex: 1 1 250px;
+  column-gap: 3vw;
 }

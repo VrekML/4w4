@@ -37,6 +37,9 @@ a:visited {
 Composants
 /////////////////// */
 .carte {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   max-width: 80%;
   margin: 0 auto;
   margin-top: 2vh;
@@ -49,7 +52,6 @@ Composants
 .carte--grande {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 4%;
   padding: 10px;
 }
@@ -103,6 +105,9 @@ Composants
   }
 }
 .menu__a {
+  padding: 2px 5px;
+}
+.menu-item {
   padding: 2px 5px;
 }
 
@@ -232,4 +237,10 @@ Layout
   column-gap: 1vw;
   row-gap: 1vh;
   border-radius: 8px;
+}
+
+.boite__flex {
+  display: flex;
+  flex: 1 1 250px;
+  column-gap: 3vw;
 }/*# sourceMappingURL=style.css.map */
