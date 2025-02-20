@@ -38,9 +38,8 @@ Composants
 /////////////////// */
 .carte {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  max-width: 80%;
+  max-width: 300px;
   margin: 0 auto;
   margin-top: 2vh;
   border: 1px solid #ddd;
@@ -51,7 +50,7 @@ Composants
 }
 .carte--grande {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 4%;
   padding: 10px;
 }
@@ -93,22 +92,18 @@ Composants
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  gap: 10px 0;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .menu {
     flex-direction: column;
   }
 }
-.menu__a {
-  padding: 2px 5px;
-}
-.menu-item {
-  padding: 2px 5px;
+.menu-item a {
+  text-decoration: none;
+  padding: 4px;
 }
 
 .recherche {
@@ -124,6 +119,42 @@ Composants
 }
 .recherche:hover {
   border: 1px solid rgb(0, 0, 0);
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("images/bgHeader.jpg");
+}
+.hero__titre {
+  padding-top: 10vh;
+  font-size: 3rem;
+  text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
+}
+.hero__contenu {
+  max-width: 80%;
+}
+.hero__description {
+  width: 40vw;
+}
+.hero__liens p, .hero button {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.hero__bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.668);
+}
+.hero__bouton:hover {
+  background-color: rgba(255, 255, 255, 0.427);
+  cursor: pointer;
 }
 
 /* /////////////////// 
@@ -188,59 +219,45 @@ Layout
   max-width: 1000px;
 }
 
-.hero {
-  min-height: 100vh;
-  background-image: url("images/bgHeader.jpg");
-}
-.hero__titre {
-  padding-top: 10vh;
-  font-size: 3rem;
-  text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
-}
-.hero__contenu {
-  max-width: 80%;
-}
-.hero__description {
-  width: 40vw;
-}
-.hero__liens p, .hero button {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-.hero__bouton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  border: none;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.668);
-}
-.hero__bouton:hover {
-  background-color: rgba(255, 255, 255, 0.427);
-  cursor: pointer;
-}
-
-.galerie {
-  max-width: 90%;
-  margin: 0 auto;
+.populaire {
   margin-bottom: 4vh;
-}
-.galerie__images {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 1vw;
-  row-gap: 1vh;
-  border-radius: 8px;
 }
 
 .boite__flex {
   display: flex;
   flex: 1 1 250px;
-  column-gap: 3vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+}
+
+/*
+  --------------------------------- Layout du pied de page
+*/
+footer {
+  background-color: rgb(216, 216, 216);
+  color: #000;
+}
+
+.piedpage {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.piedpage__s1__externe {
+  flex: 0 0 20%;
+}
+.piedpage__s1__externe .menu {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1__adresse {
+  flex: 0 0 40%;
+}
+.piedpage__s1__description {
+  flex: 1 0 400px;
 }/*# sourceMappingURL=style.css.map */

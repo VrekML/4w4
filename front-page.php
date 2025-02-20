@@ -26,11 +26,6 @@
             </div>
         </div>
     </section>
-    <section class="galerie">
-        <figure class="galerie__fig">
-            <img src="" alt="">
-        </figure>
-    </section>
  
     <section class="populaire">
         <div class="boite__flex global">

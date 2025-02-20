@@ -2,10 +2,9 @@
 
 .carte {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   
-  max-width: 80%;
+  max-width: 300px;
   margin: 0 auto;
   margin-top: 2vh;
   border: 1px solid #ddd;
@@ -17,7 +16,7 @@
 
   &--grande {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 4%;
     padding: 10px;
 

@@ -3,70 +3,14 @@
   max-width: 1000px;
 }
 
-.hero {
-  min-height: 100vh;
-  background-image: url("images/bgHeader.jpg");
-
-  &__titre {
-    padding-top: 10vh;
-    font-size: 3rem;
-    text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
-  }
-
-  &__contenu {
-    max-width: 80%;
-  }
-
-  &__description {
-    width: 40vw;
-  }
-
-  &__liens p, button {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-
-  &__bouton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 40px;
-    border: none;
-    border-radius: 4px;
-
-    background-color: rgba(255, 255, 255, 0.668);
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.427);
-      cursor: pointer;
-    }
-  }
-}
-
-.galerie {
-  max-width: 90%;
-  margin: 0 auto;
+.populaire {
   margin-bottom: 4vh;
-
-  &__images {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 1vw;
-    row-gap: 1vh;
-
-    border-radius: 8px;
-  }
 }
 
 .boite__flex {
   display: flex;
-  // flex-wrap: wrap;
   flex: 1 1 250px;
-  column-gap: 3vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
 }
