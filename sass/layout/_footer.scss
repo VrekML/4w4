@@ -3,8 +3,8 @@
 */
 
 footer{
-  background-color: rgb(216, 216, 216);
-  color : #000;
+  background-color: rgb(162, 162, 162); // devrait devenir une variable de couleur
+  color : #000;  // variable !!
 }
 
 .piedpage{
@@ -29,7 +29,7 @@ footer{
             &__recherche{}
         }
         &__description{
-            flex:1 0 400px;
+            flex:1 0 300px;
         }
     }
 }

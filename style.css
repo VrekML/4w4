@@ -236,7 +236,7 @@ Layout
   --------------------------------- Layout du pied de page
 */
 footer {
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(162, 162, 162);
   color: #000;
 }
 
@@ -260,5 +260,5 @@ footer {
   flex: 0 0 40%;
 }
 .piedpage__s1__description {
-  flex: 1 0 400px;
+  flex: 1 0 300px;
 }/*# sourceMappingURL=style.css.map */

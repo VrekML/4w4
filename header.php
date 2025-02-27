@@ -11,10 +11,18 @@
 <body>
     <header>
         <div class="entete">
-            <figure class="entete__logo">
+          <?php
+            if (function_exists('the_custom_logo')) {
+              the_custom_logo();
+            }
+          ?>
+          
+          <!-- ancien format de logo -->
+            <!-- <figure class="entete__logo">
                 
                 <img src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="logo voyage" height="40" width="auto">
-            </figure>
+            </figure> -->
+
             <label for="chk__burger" class="burger">
                 <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=000" width="32" height="32">
             </label>
@@ -54,10 +62,9 @@
                     </ul>
                 </nav> -->
                 <div class="entete__recherche">
-                    <form  class="recherche">
-                        <input type="text" class="recherche__input" onfocus="this.value=''" value="Recherche">
-                        <img  class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="20" height="20">
-                    </form>
+                <div class="piedpage__s1__adresse__recherche">
+                    <?php get_search_form();   ?>
+                </div>
                 </div>
             </div>
         </div>
