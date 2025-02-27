@@ -10,6 +10,9 @@ footer{
 .piedpage{
     display: flex;
     flex-direction: column;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
     &__s1{
         display: flex;
         flex-wrap: wrap;

@@ -244,6 +244,8 @@ footer {
 .piedpage {
   display: flex;
   flex-direction: column;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 .piedpage__s1 {
   display: flex;
