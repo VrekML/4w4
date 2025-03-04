@@ -62,9 +62,7 @@
                     </ul>
                 </nav> -->
                 <div class="entete__recherche">
-                <div class="piedpage__s1__adresse__recherche">
-                    <?php get_search_form();   ?>
-                </div>
+                    <?php get_search_form() ?>
                 </div>
             </div>
         </div>
