@@ -10,12 +10,13 @@
     outline: none;
     border: none;
 
-    color: rgb(142, 142, 142);
+    color: rgb(0, 0, 0);
   }
 
   &__bouton {
     border: none;
     background-color: transparent;
+    cursor: pointer;
   }
 
   &:hover {

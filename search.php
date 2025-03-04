@@ -1,6 +1,6 @@
 <?php
 /**
- *  search.php modele pour afficher les resultats de recherche
+ *  search.php, modele pour afficher les resultats de recherche
  */
 ?>
 <?php get_header() ?>

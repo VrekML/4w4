@@ -7,17 +7,20 @@
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
-                <?php echo bloginfo('name'); ?>
+                Club de voyages IHOP
             </h1>
             <p class="hero__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur est officiis, mollitia minus asperiores quas libero saepe consequuntur at blanditiis et eligendi, sequi sit quae laboriosam, ex delectus nesciunt.
+                Avec IHOP, vous allez faire les plus beaux voyages de votre vie! Faites nous confiance, on vous en supplie...
             </p>
-            <a href="" class="hero__courriel">
-                info@cmaisonneuve.qc.ca
-            </a>
             <button class="hero__bouton">
                 Inscription
             </button>
+            <p class="hero__info-top">
+                Arik Malenfant-Lacombe
+            </p>
+            <p class="hero__info">
+                2901 Sherbrooke St E, 123-456-7899, info@cmaisonneuve.qc.ca
+            </p>
             <div class="hero__icone-app">
                 <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
                 <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">

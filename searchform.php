@@ -1,3 +1,5 @@
+<!-- form de recherche -->
+
 <div class="entete__recherche">
   <form  class="recherche">
     <input class="recherche__input" type="search" placeholder="Rechercher..." value="<?php echo get_search_query(); ?>" name="s" />
