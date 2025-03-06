@@ -1,4 +1,6 @@
-// composant carte
+/*
+  --------------------------------- Composant de carte
+*/
 
 .carte {
   display: flex;
@@ -13,6 +15,12 @@
 
   background-color: white;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.253);
+
+  &__titre {
+    font-size: 1.3rem;
+    color: $lien;
+    text-decoration: underline;
+  }
 
   &--grande {
     display: flex;
@@ -32,34 +40,60 @@
     padding-top: 1vh;
   }
 
-  &__input {
-    width: 100%;
-    margin: 0 auto;
-    border: 2px solid rgb(0, 255, 242);
-
-    color: rgb(142, 142, 142);
-    
-    &:hover {
-      border: 2px solid rgb(0, 190, 180);
-    }
+  &__contenu img {
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
   }
 
-  &__bouton {
-    padding: 10px 20px;
-    margin-top: 1vh;
-    text-align: center;
-    background-color: white;
-    color: black;
-    border: 2px solid rgb(0, 255, 242);
-    border-radius: 4px;
-    cursor: pointer;
+  // &__input {
+  //   width: 100%;
+  //   margin: 0 auto;
+  //   border: 2px solid rgb(0, 255, 242);
 
-    &--actif {
-      background-color: white;
-    }
+  //   color: rgb(142, 142, 142);
+    
+  //   &:hover {
+  //     border: 2px solid rgb(0, 190, 180);
+  //   }
+  // }
+
+  // &__bouton {
+  //   padding: 10px 20px;
+  //   margin-top: 1vh;
+  //   text-align: center;
+  //   background-color: white;
+  //   color: $noir;
+  //   border: 2px solid rgb(182, 182, 182);
+  //   border-radius: 4px;
+  //   cursor: pointer;
+
+  //   &--actif {
+  //     background-color: white;
+  //   }
+
+  //   &:hover {
+  //     background-color: rgb(242, 242, 242);
+  //   }
+  // }
+}
+
+.post-categories {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-top: 5vh;
+  gap: 2vw;
+  list-style: none;
+
+  & a {
+    padding: 0.6rem;
+    border: solid 1px $noir;
+    border-radius: 3px;
 
     &:hover {
-      background-color: rgb(242, 242, 242);
+      background-color: rgba(0, 0, 0, 0.05);
+      color: $noir;
     }
   }
 }

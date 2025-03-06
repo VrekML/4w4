@@ -3,38 +3,42 @@
 */
 
 footer{
-  background-color: rgb(162, 162, 162); // devrait devenir une variable de couleur
-  color : #000;  // variable !!
+  background-color: rgb(162, 162, 162);
+  color: $noir;
 }
 
 .piedpage{
     display: flex;
     flex-direction: column;
-    padding-top: 3vh;
+    padding-top: 1vh;
     padding-bottom: 3vh;
+    max-width: 80%;
 
     &__s1{
         display: flex;
         flex-wrap: wrap;
-        gap: 3rem;
+        justify-content: center;
+        gap: 2rem;
+        flex : 0 0 30%;
 
+        & div {
+          width: 30%;
+        }
         &__externe {
-            flex : 0 0 20%;
-            & .menu { //ul
+
+            & h2 {
+              margin: 0 auto;
+              margin-bottom: 1vh;
+            }
+
+            & .menu__ext {
                 display : flex;
                 flex-direction: column;
-            }
-        }
-        &__adresse{
-            flex : 0 0 40%;
-            &__recherche{
+                text-decoration: underline;
             }
         }
         &__coord {
           margin: 0;
-        }
-        &__description{
-            flex:1 0 300px;
         }
         &__icone-app {
           margin-top: 3vh;
@@ -43,7 +47,7 @@ footer{
 }
 
 .piedpage__s1__adresse__recherche .recherche {
-  margin-top: 3vh;
+  margin-bottom: 3vh;
   border: none;
   
   &:hover {
@@ -53,4 +57,12 @@ footer{
   &__input:hover {
     background-color: rgb(236, 236, 236);
   }
+}
+
+.piedpage__s1__externe #menu-principal-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3vh;
+  padding-left: 0;
 }

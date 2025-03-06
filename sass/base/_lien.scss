@@ -1,9 +1,12 @@
+/*
+  --------------------------------- Liens
+*/
 a {
-  color : rgba(0, 0, 0, 0.69);
+  color : $lien;
   text-decoration: none;
 
   &:hover {
-    color: rgb(0, 0, 0);
+    color: $noir;
   }
   &:visited {
     color: rgba(0,0,0,0.3);

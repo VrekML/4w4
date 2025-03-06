@@ -1,4 +1,6 @@
-// composant menu
+/*
+  --------------------------------- Composant menu
+*/
 
 .menu{ // ul
   display : flex;
@@ -8,7 +10,7 @@
   flex-direction: row;
   list-style-type: none;
   gap : 10px 0;
-  &-item{ // li
+  &-item{
 
      a { //a
       text-decoration : none;

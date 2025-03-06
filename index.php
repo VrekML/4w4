@@ -5,7 +5,6 @@
  */
 ?>
 <?php get_header() ?>
-<h4>index.php</h4>
     <section class="populaire">
         <div class="boite__flex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

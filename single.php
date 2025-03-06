@@ -4,7 +4,6 @@
  */
 ?>
 <?php get_header() ?>
-<h4>single.php</h4>
     <section class="populaire">
         <div class="global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

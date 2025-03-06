@@ -1,4 +1,6 @@
-// composant de recherches
+/*
+  --------------------------------- Composant de recherches
+*/
 
 .recherche {
   display: flex;
@@ -20,6 +22,6 @@
   }
 
   &:hover {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid $noir;
   }
 }
